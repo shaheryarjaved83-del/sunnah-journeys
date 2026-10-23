@@ -8,7 +8,7 @@ import { cn } from '@/lib/utils'
 import { navLinks, siteConfig } from '@/lib/site-config'
 import { Logo } from '@/components/shared/logo'
 import { ButtonLink } from '@/components/shared/button-link'
-import { EightPointStar } from '@/components/shared/geometric'
+import { GeometricMotif } from '@/components/shared/geometric'
 import { Mail, Phone } from 'lucide-react'
 
 export function Navbar() {
@@ -51,14 +51,14 @@ export function Navbar() {
       >
         Skip to content
       </a>
-      <header className="fixed inset-x-0 top-0 z-50 px-2.5 pt-2 sm:px-5 sm:pt-4">
+      <header className="fixed inset-x-0 top-0 z-50 px-2 pt-1.5 sm:px-5 sm:pt-4">
         <nav
           aria-label="Main"
           className={cn(
-            'mx-auto flex max-w-[1320px] items-center justify-between rounded-full border px-3.5 transition-all duration-500 sm:px-6',
+            'mx-auto flex max-w-[1320px] items-center justify-between rounded-full border px-3 transition-all duration-500 sm:px-6',
             scrolled || open
-              ? 'h-14 border-line/80 bg-white/90 shadow-[0_12px_40px_-20px_rgba(32,45,41,0.35)] backdrop-blur-xl sm:h-16'
-              : 'h-14 border-white/60 bg-white/65 backdrop-blur-md sm:h-[4.5rem]',
+              ? 'h-12 border-line/80 bg-white/90 shadow-[0_12px_40px_-20px_rgba(32,45,41,0.35)] backdrop-blur-xl sm:h-16'
+              : 'h-12 border-white/60 bg-white/65 backdrop-blur-md sm:h-[4.5rem]',
           )}
         >
           <Logo />
@@ -98,7 +98,7 @@ export function Navbar() {
               aria-expanded={open}
               aria-controls="mobile-menu"
               aria-label={open ? 'Close menu' : 'Open menu'}
-              className="relative flex size-10 items-center justify-center rounded-full border border-line bg-white/80 sm:size-11 lg:hidden"
+              className="relative flex size-9 items-center justify-center rounded-full border border-line bg-white/80 sm:size-11 lg:hidden"
             >
               <span className="relative block h-3 w-5" aria-hidden>
                 <span
@@ -133,8 +133,8 @@ export function Navbar() {
             transition={{ duration: 0.6, ease: [0.76, 0, 0.24, 1] }}
           >
             <div className="bg-pattern pointer-events-none absolute inset-0 opacity-40" aria-hidden />
-            <EightPointStar className="pointer-events-none absolute -right-24 bottom-10 size-80 opacity-40" strokeWidth={0.4} />
-            <div className="relative flex min-h-full flex-col px-6 pt-24 pb-10">
+            <GeometricMotif className="pointer-events-none absolute -right-24 bottom-10 size-80 opacity-40" strokeWidth={0.4} />
+            <div className="relative flex min-h-full flex-col px-6 pt-20 pb-10">
               <ul className="flex flex-col">
                 {navLinks.map((link, i) => (
                   <motion.li

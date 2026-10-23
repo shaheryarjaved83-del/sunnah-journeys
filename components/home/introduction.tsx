@@ -3,7 +3,7 @@ import { CalendarCheck, Compass, Hotel } from 'lucide-react'
 import { ImageReveal, Reveal, Stagger, StaggerItem } from '@/components/animations/reveal'
 import { Parallax } from '@/components/animations/parallax'
 import { ButtonLink } from '@/components/shared/button-link'
-import { EightPointStar } from '@/components/shared/geometric'
+import { GeometricMotif } from '@/components/shared/geometric'
 import { Accent } from '@/components/shared/section-heading'
 
 const highlights = [
@@ -17,7 +17,7 @@ export function Introduction() {
     <section id="introduction" className="relative scroll-mt-20 overflow-hidden py-24 sm:py-32" aria-labelledby="intro-heading">
       <div className="container-wide grid items-center gap-16 lg:grid-cols-2 lg:gap-20">
         <div className="relative mx-auto w-full max-w-xl lg:mx-0">
-          <EightPointStar className="absolute -top-10 -left-10 size-40 opacity-60" strokeWidth={0.6} />
+          <GeometricMotif className="absolute -top-10 -left-10 size-40 opacity-60" strokeWidth={0.6} />
           <div className="relative grid grid-cols-12 gap-4">
             <ImageReveal className="arch col-span-7 aspect-[3/4.4] shadow-[0_40px_80px_-40px_rgba(22,75,66,0.45)]">
               <Image

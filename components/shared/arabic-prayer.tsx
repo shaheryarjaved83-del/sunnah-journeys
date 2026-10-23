@@ -1,5 +1,5 @@
 import { Reveal } from '@/components/animations/reveal'
-import { EightPointStar, OrnamentDivider } from '@/components/shared/geometric'
+import { GeometricMotif, OrnamentDivider } from '@/components/shared/geometric'
 import { cn } from '@/lib/utils'
 
 interface ArabicPrayerProps {
@@ -20,8 +20,8 @@ export function ArabicPrayer({ eyebrow, heading, arabic, translation, reference,
       aria-label={heading ? undefined : 'Supplication'}
     >
       <div className="bg-pattern pointer-events-none absolute inset-0 opacity-60 [mask-image:radial-gradient(ellipse_at_center,black_10%,transparent_70%)]" aria-hidden />
-      <EightPointStar className="pointer-events-none absolute -top-16 -left-16 size-64 opacity-30" strokeWidth={0.4} />
-      <EightPointStar className="pointer-events-none absolute -right-20 -bottom-20 size-72 opacity-30" strokeWidth={0.4} />
+      <GeometricMotif className="pointer-events-none absolute -top-16 -left-16 size-64 opacity-30" strokeWidth={0.4} />
+      <GeometricMotif className="pointer-events-none absolute -right-20 -bottom-20 size-72 opacity-30" strokeWidth={0.4} />
 
       <div className="container-wide relative">
         <div className="relative mx-auto max-w-4xl border border-gold/40 bg-white/55 px-5 py-14 text-center backdrop-blur-sm sm:px-14 sm:py-20">

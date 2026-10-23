@@ -1,6 +1,6 @@
 import { BedDouble, HandHeart, Plane, Sparkles } from 'lucide-react'
 import { Stagger, StaggerItem } from '@/components/animations/reveal'
-import { EightPointStar } from '@/components/shared/geometric'
+import { GeometricMotif } from '@/components/shared/geometric'
 import { Accent, SectionHeading } from '@/components/shared/section-heading'
 
 const reasons = [
@@ -44,7 +44,7 @@ export function WhyChooseUs() {
           {reasons.map(({ icon: Icon, title, text }, i) => (
             <StaggerItem key={title} className="h-full">
               <article className="group relative flex h-full flex-col overflow-hidden rounded-[1.75rem] border border-line bg-white p-7 transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/60 hover:shadow-[0_30px_60px_-35px_rgba(22,75,66,0.45)] sm:p-8">
-                <EightPointStar
+                <GeometricMotif
                   className="absolute -top-10 -right-10 size-32 opacity-0 transition-all duration-700 group-hover:rotate-45 group-hover:opacity-60"
                   strokeWidth={0.7}
                 />

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { Compass, Eye, Gem, HandHeart, Heart, ShieldCheck, Sparkle } from 'lucide-react'
 import { ImageReveal, Reveal, Stagger, StaggerItem } from '@/components/animations/reveal'
 import { Parallax } from '@/components/animations/parallax'
-import { EightPointStar } from '@/components/shared/geometric'
+import { GeometricMotif } from '@/components/shared/geometric'
 import { Accent, SectionHeading } from '@/components/shared/section-heading'
 
 export function Philosophy() {
@@ -59,7 +59,7 @@ export function Philosophy() {
               </ImageReveal>
             </Parallax>
             <Reveal delay={0.3} className="flex flex-col justify-center rounded-[2rem] border border-gold/40 bg-sage-50 p-6 text-center">
-              <EightPointStar className="mx-auto size-12" />
+            <GeometricMotif className="mx-auto size-12" />
               <p className="mt-4 font-serif text-xl leading-snug text-ink italic">Worship first. Everything else, arranged with care.</p>
             </Reveal>
           </div>
@@ -99,7 +99,7 @@ export function MissionVision() {
             <StaggerItem key={label} className="h-full">
               <article className="group relative h-full overflow-hidden rounded-[2rem] border border-line bg-white p-8 transition-all duration-500 hover:border-gold/60 hover:shadow-[0_30px_70px_-40px_rgba(22,75,66,0.5)] sm:p-12">
                 <span className="pointer-events-none absolute inset-2 rounded-[1.6rem] border border-gold/15" aria-hidden />
-                <EightPointStar className="absolute -right-12 -bottom-12 size-48 opacity-30 transition-transform duration-1000 group-hover:rotate-45" strokeWidth={0.5} />
+                <GeometricMotif className="absolute -right-12 -bottom-12 size-48 opacity-30 transition-transform duration-1000 group-hover:rotate-45" strokeWidth={0.5} />
                 <span className="relative flex size-16 items-center justify-center rounded-full bg-emerald text-white ring-8 ring-sage-50">
                   <Icon className="size-6" strokeWidth={1.4} aria-hidden />
                 </span>

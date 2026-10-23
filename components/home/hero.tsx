@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'motion/react'
 import { ButtonLink } from '@/components/shared/button-link'
-import { EightPointStar } from '@/components/shared/geometric'
+import { GeometricMotif } from '@/components/shared/geometric'
 
 const ease = [0.22, 1, 0.36, 1] as const
 
@@ -59,7 +59,7 @@ export function Hero() {
         animate={{ opacity: 1, scale: 1, y: [0, -14, 0] }}
         transition={{ opacity: { duration: 1.6, delay: 0.8 }, scale: { duration: 1.6, delay: 0.8 }, y: { duration: 9, repeat: Infinity, ease: 'easeInOut' } }}
       >
-        <EightPointStar className="size-44 text-white/80" strokeWidth={0.6} />
+        <GeometricMotif className="size-44 text-white/80" strokeWidth={0.6} />
       </motion.div>
       <motion.div
         aria-hidden
@@ -68,7 +68,7 @@ export function Hero() {
         animate={{ opacity: 0.7, y: [0, 10, 0] }}
         transition={{ opacity: { duration: 1.6, delay: 1.1 }, y: { duration: 11, repeat: Infinity, ease: 'easeInOut' } }}
       >
-        <EightPointStar className="size-20" strokeWidth={1} />
+        <GeometricMotif className="size-20" strokeWidth={1} />
       </motion.div>
 
       <motion.div style={{ y: contentY }} className="container-wide relative z-10 w-full pt-32 pb-24 lg:pt-36 lg:pb-28">

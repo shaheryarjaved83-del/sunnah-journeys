@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import { motion } from 'motion/react'
 import type { ReactNode } from 'react'
-import { EightPointStar } from '@/components/shared/geometric'
+import { GeometricMotif } from '@/components/shared/geometric'
 
 const ease = [0.22, 1, 0.36, 1] as const
 
@@ -60,7 +60,7 @@ function HeroText({ eyebrow, title, description, children, center }: Omit<PageHe
 export function PageHero({ image, imageAlt, layout = 'split', ...text }: PageHeroProps) {
   if (layout === 'panorama') {
     return (
-      <section className="relative overflow-hidden pt-36 pb-16 sm:pt-44">
+      <section className="relative overflow-hidden pt-28 pb-16 sm:pt-44">
         <div className="bg-pattern pointer-events-none absolute inset-x-0 top-0 h-[70%] opacity-40 [mask-image:linear-gradient(to_bottom,black,transparent)]" aria-hidden />
         <div className="container-wide relative">
           <HeroText {...text} center />
@@ -81,7 +81,7 @@ export function PageHero({ image, imageAlt, layout = 'split', ...text }: PageHer
   }
 
   return (
-    <section className="relative overflow-hidden pt-32 pb-16 sm:pt-40 lg:pb-24">
+    <section className="relative overflow-hidden pt-24 pb-16 sm:pt-40 lg:pb-24">
       <div className="bg-pattern pointer-events-none absolute inset-y-0 left-0 w-1/2 opacity-40 [mask-image:linear-gradient(to_right,black,transparent)]" aria-hidden />
       <div className="container-wide relative grid items-center gap-14 lg:grid-cols-2">
         <HeroText {...text} />
@@ -93,7 +93,7 @@ export function PageHero({ image, imageAlt, layout = 'split', ...text }: PageHer
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.2, ease, delay: 0.9 }}
           >
-            <EightPointStar className="size-28" strokeWidth={0.8} />
+            <GeometricMotif className="size-28" strokeWidth={0.8} />
           </motion.div>
           <motion.div
             className="arch relative aspect-[4/5] overflow-hidden shadow-[0_50px_100px_-50px_rgba(22,75,66,0.55)]"

@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { Mail, MapPin, Phone } from 'lucide-react'
 import { navLinks, siteConfig, getWhatsAppLink } from '@/lib/site-config'
 import { Logo } from '@/components/shared/logo'
-import { EightPointStar, OrnamentDivider } from '@/components/shared/geometric'
+import { GeometricMotif, OrnamentDivider } from '@/components/shared/geometric'
 import { FacebookIcon, InstagramIcon, WhatsAppIcon } from '@/components/shared/social-icons'
 
 const journeyLinks = [
@@ -22,7 +22,7 @@ export function Footer() {
 
   return (
     <footer className="relative overflow-hidden border-t border-line bg-sage-50">
-      <EightPointStar className="pointer-events-none absolute -top-24 -right-24 size-96 opacity-25" strokeWidth={0.35} />
+      <GeometricMotif className="pointer-events-none absolute -top-24 -right-24 size-96 opacity-25" strokeWidth={0.35} />
       <div className="container-wide relative pt-20 pb-10">
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-4">

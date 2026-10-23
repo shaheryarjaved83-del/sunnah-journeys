@@ -124,8 +124,8 @@
     background: linear-gradient(90deg, transparent, #b89b5e 20%, #b89b5e 80%, transparent);
   }
   .bg-pattern {
-    background-image: url('/patterns/eight-point-star.svg');
-    background-size: 88px 88px;
+    background-image: url('/patterns/islamic-pattern.svg');
+    background-size: 44px 44px;
   }
 }
 

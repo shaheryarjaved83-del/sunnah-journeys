@@ -2,7 +2,7 @@ import Image from 'next/image'
 import type { ReactNode } from 'react'
 import { Reveal } from '@/components/animations/reveal'
 import { Parallax } from '@/components/animations/parallax'
-import { EightPointStar } from '@/components/shared/geometric'
+import { GeometricMotif } from '@/components/shared/geometric'
 
 interface CtaBannerProps {
   image: string
@@ -21,7 +21,7 @@ export function CtaBanner({ image, imageAlt, eyebrow, title, description, action
           <Image src={image} alt={imageAlt} fill sizes="100vw" className="object-cover" />
         </Parallax>
         <div className="absolute inset-0 bg-gradient-to-b from-ivory/85 via-ivory/70 to-ivory/90 sm:bg-gradient-to-r sm:from-ivory/95 sm:via-ivory/75 sm:to-ivory/10" aria-hidden />
-        <EightPointStar className="pointer-events-none absolute top-10 right-10 hidden size-40 opacity-50 lg:block" strokeWidth={0.6} />
+        <GeometricMotif className="pointer-events-none absolute top-10 right-10 hidden size-40 opacity-50 lg:block" strokeWidth={0.6} />
         <div className="relative flex min-h-[560px] items-center px-6 py-16 sm:px-14 lg:px-20">
           <div className="max-w-xl">
             {eyebrow && (

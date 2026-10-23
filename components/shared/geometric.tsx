@@ -1,13 +1,20 @@
 import { cn } from '@/lib/utils'
 
-export function EightPointStar({ className, strokeWidth = 1 }: { className?: string; strokeWidth?: number }) {
+export function GeometricMotif({ className, strokeWidth = 1 }: { className?: string; strokeWidth?: number }) {
   return (
     <svg viewBox="0 0 100 100" fill="none" aria-hidden className={cn('text-gold', className)}>
       <g stroke="currentColor" strokeWidth={strokeWidth}>
-        <rect x="20" y="20" width="60" height="60" />
-        <rect x="20" y="20" width="60" height="60" transform="rotate(45 50 50)" />
-        <circle cx="50" cy="50" r="18" />
-        <circle cx="50" cy="50" r="6" />
+        <circle cx="50" cy="50" r="45" />
+        <circle cx="50" cy="50" r="25" />
+        <circle cx="50" cy="50" r="8" />
+        <line x1="50" y1="5" x2="50" y2="25" />
+        <line x1="50" y1="75" x2="50" y2="95" />
+        <line x1="5" y1="50" x2="25" y2="50" />
+        <line x1="75" y1="50" x2="95" y2="50" />
+        <line x1="18" y1="18" x2="32" y2="32" />
+        <line x1="68" y1="68" x2="82" y2="82" />
+        <line x1="82" y1="18" x2="68" y2="32" />
+        <line x1="32" y1="68" x2="18" y2="82" />
       </g>
     </svg>
   )
